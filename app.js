@@ -2,7 +2,9 @@ const functions = require("./function");
 const express = require("express"); 
 const path = require("path");
 const server = express();
-const port = 3000; //port
+const port = process.env.PORT || 3000; //port
+//process.env.PORT dostosowujemy się do wolnego portu jaki usługodawca nam udostępni - dla potrzeb hostowania
+// || 3000 -> żeby działało lokalnie
 const x = 11;
 
 
